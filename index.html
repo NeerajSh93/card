@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <!-- <link rel="stylesheet" href="style5.css"> -->
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+#content{
+    max-width: 550px;
+    width: 100%;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2vw;
+}
+.first{
+    /* max-width: 200px;
+    width: 100%; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5vw 0;
+    background-color: hsl(252, 100%, 67%) ;
+    border-radius: 2vw;
+}
+.name{
+    color: hsl(241, 48%, 78%);
+    font-size: 1.4vw;
+    padding: 0.2vw 0;
+    margin-bottom: 1vw;
+}
+.circle{
+    border-radius: 50%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    height: 10vw;
+    width: 10vw;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vw;
+    /* box-shadow: 4px 3px 3px rgba(0, 0, 0, 0.5); */
+    background-color: hsla(256, 72%, 46%, 1);
+}
+.num{
+    font-size: 3vw;
+    color: #fff;
+    font-weight: 600;
+    padding: 1vw 0;
+    
+}
+.mark{
+    color: #7a5fdf;
+    font-size: 1vw;
+    font-weight: 500;
+}
+.gress{
+    font-size: 1.6vw;
+    color: #fff;
+    font-weight: 600;
+    padding: 1.3vw 0;
+}
+.perform{
+    font-size: 1vw;
+    color: #fff;
+    width: 75%;
+    line-height: 1.4vw;
+    color: hsl(241, 48%, 78%);
+}
+.second{
+    max-width: 300px;
+    width: 100%;
+    padding: 2vw 1vw;
+}
+.head{
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+.react{
+    margin-top: 1vw;
+    padding: 1vw 1vw;
+    display: flex;
+     justify-content: space-between;
+    font-weight: 500;
+    border-radius: 0.5vw;
+}
+.nj{
+    margin-left: 6vw;
+}
+i{
+    padding-right: 0.2vw;
+}
+.col{
+    color: gray;
+}
+button{
+    margin-top: 1vw;
+    padding: 1vw 1vw;
+    width: 100%;
+    color: #fff;
+    background-color: rgb(8, 8, 39);
+    border-radius: 2vw;
+    font-size: 1vw;
+    font-weight: 600;
+}
+@media (max-width:600px) {
+    body{
+        /* height: 100vh; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #content{
+        /* max-width: 150px; */
+        height: 100%;
+        width: 100%;
+        box-shadow: 0 5px 6px rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 0%;
+    }
+    .first{
+        height: 50%;
+        width: 100%;
+       border-radius: 0 0 5vw 5vw;
+       padding: 5vw 0;
+       background-color: hsl(252, 100%, 67%);
+    }
+    .name{
+        font-size: 5vw;
+        padding: 3vw 0;
+        margin-bottom: 7vw;
+    }
+    .circle{
+        height: 35vw;
+        width: 35vw;
+        background-color: hsla(256, 72%, 46%, 1);
+    }
+    .num{
+        font-size: 10vw;
+        padding: 3vw 0;
+    }
+    .mark{
+        font-size: 3vw;
+    }
+    .gress{
+        font-size: 6vw;
+        padding: 3vw 0;
+    }
+    .perform{
+        font-size: 4vw;
+        line-height: 4.2vw;
+        
+    }
+    .second{
+        height: 50%;
+        padding: 2vw 1vw;
+    }
+    .head{
+        font-size: 5vw;
+        font-weight: 600;
+        padding: 3vw 0;
+    }
+    .react{
+        padding: 3vw 3vw;
+        font-size: 3.6vw;
+        margin-top: 3vw;
+    }
+    .nj{
+        margin-left: 35vw;
+    }
+    button{
+        width: 100%;
+        font-size: 4vw;
+        margin-top: 4vw;
+        padding: 3vw 0;
+        border-radius: 5vw;
+
+    }
+
+}
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div class="first">
+            <p class="name">Your Result</p>
+            <div class="circle">
+                <span class="num">76</span>
+                <span class="mark">of 100</span>
+            </div>
+            <p class="gress">Great</p>
+            <span class="perform">You scored higher than 65% of the people who have taken these tests.</span>
+        </div>
+        <div class="second">
+            <p class="head">Summary</p>
+            <div class="data">
+                
+            <p class="react" style="color: rgb(240, 77, 77); background-color: rgb(238, 219, 221)" ><i class="ri-flashlight-line"></i> Reaction
+                <span class="nj" style="color: black; font-weight: 600;"> 80 <span class="col">/100</span></span></p>
+            <p class="react" style="color: yellow; background-color: rgb(243, 243, 174);"> <i class="ri-brain-line"></i>Memory
+                 <span class="nj" style="color: black; font-weight: 600;">92 <span class="col">/100</span></span></p>
+            <p class="react" style="color: green; background-color: rgb(192, 230, 192);"> <i class="ri-chat-3-line"></i>Verbal
+                 <span class="nj" style="color: black; font-weight: 600;">61 <span class="col">/100</span></span></p>
+            <p class="react" style="color: blueviolet; background-color: rgb(204, 216, 231);"> <i class="ri-eye-line"></i>Visual 
+                <span class="nj" style="color: black; font-weight: 600;">72 <span class="col">/100</span></span></p>
+            <button>Continue</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
